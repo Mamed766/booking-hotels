@@ -1,0 +1,85 @@
+.daily-config {
+  max-width: 960px;
+  margin: 40px auto 60px auto;
+  padding: 0 20px;
+}
+
+.daily-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+.daily-table-wrapper {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+  padding: 16px;
+  overflow-x: auto;
+}
+
+.daily-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+
+  thead {
+    background: #f5f7fb;
+
+    th {
+      text-align: left;
+      padding: 10px 12px;
+      font-weight: 600;
+      color: #555;
+      border-bottom: 1px solid #e0e4ea;
+      white-space: nowrap;
+    }
+  }
+
+  tbody {
+    tr {
+      &:nth-child(even) {
+        background: #fafbff;
+      }
+
+      td {
+        padding: 10px 12px;
+        border-bottom: 1px solid #eef1f6;
+        vertical-align: middle;
+
+        select {
+          width: 100%;
+          padding: 8px 10px;
+          border-radius: 10px;
+          border: 1px solid #d7dce1;
+          background: #fafafa;
+          font-size: 13px;
+          outline: none;
+          transition: 0.2s border;
+
+          &:focus {
+            border-color: #4f8cff;
+            background: #ffffff;
+          }
+
+          &:disabled {
+            background: #f1f1f1;
+            color: #9ca3af;
+          }
+        }
+      }
+    }
+  }
+}
+
+.daily-config-placeholder {
+  max-width: 960px;
+  margin: 30px auto;
+  padding: 16px 20px;
+  background: #fff3cd;
+  border-radius: 12px;
+  border: 1px solid #ffeeba;
+  color: #856404;
+  font-size: 14px;
+}
